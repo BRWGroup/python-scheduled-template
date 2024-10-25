@@ -41,7 +41,7 @@ jobs:
       # Guard
       - name: Validity check
         if: steps.validate.outputs.validity != 'True'
-        uses: actions/github-script@v3
+        uses: actions/github-script@v7
         with:
           script: |
               core.setFailed('${{steps.validate.outputs.validity}}')

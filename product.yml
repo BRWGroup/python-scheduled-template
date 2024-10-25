@@ -17,7 +17,7 @@ inputPorts:
   links:
     location: http://example.com
 transform:
-  cpus: 100
+  cpus: 1
   schedule:
     cron: '@daily'
 outputPorts:
